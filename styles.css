@@ -1,80 +1,61 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background: #e6d7c3;
     text-align: center;
-    background-color: #e6d7c3;
+    color: #5a4632;
 }
 
-/* HEADER */
+/* Header */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #cfb8a2;
-    padding: 15px 20px;
-    font-size: 20px;
-    border-bottom: 2px solid #a3876f;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-/* LOGO TEXT */
+/* Logo */
 .logo {
     font-family: 'Gistesy', cursive;
     font-size: 28px;
-    color: #5a4632;
-    margin: 0;
 }
 
-/* MENU ICON */
+/* Menu Icon */
 .menu-icon {
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
 }
 
-/* NAVIGATION MENU */
-#mobile-menu {
-    display: none;
-    background: #5a4632;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
+/* Mobile Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background: black;
+    padding-top: 60px;
+    transition: 0.3s;
 }
 
-#mobile-menu ul {
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-#mobile-menu li {
+nav ul li {
     padding: 15px;
+    text-align: left;
 }
 
-#mobile-menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* HERO SECTION */
-.hero {
-    background: url('https://github.com/arcegag/heavenly-glo/blob/main/eye%20lash.jpg?raw=true') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* BOOK NOW BUTTON */
-.book-now {
-    padding: 12px 25px;
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
-}
+nav ul li a {
