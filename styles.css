@@ -1,43 +1,33 @@
 /* General Styles */
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Gistesy', cursive;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url('eye%20lash.jpg?raw=true') no-repeat center center/cover;
-    position: relative;
-}
-
-/* Background Overlay */
-.background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Faded effect */
-    z-index: -1;
+    background: #e6d7c3;
+    text-align: center;
+    color: #5a4632;
 }
 
 /* Header */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 /* Logo */
 .logo {
     font-family: 'Gistesy', cursive;
-    font-size: 35px;
+    font-size: 28px;
 }
 
 /* Menu Icon */
@@ -50,22 +40,22 @@ header {
 nav {
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%;
     width: 250px;
     height: 100vh;
     background: black;
-    transition: right 0.3s ease-in-out;
     padding-top: 60px;
+    transition: 0.3s;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: left;
 }
 
 nav ul li {
-    padding: 15px 20px;
+    padding: 15px;
+    text-align: left;
 }
 
 nav ul li a {
@@ -74,7 +64,19 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Active Navigation */
+/* Show menu */
 nav.active {
-    right: 0;
+    left: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://github.com/arcegag/heavenly-glo/blob/main/eye%20lash.jpg?raw=true') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
