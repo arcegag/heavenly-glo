@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d4b896;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.hero {
+    background: url('lashes_background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+}
+
+#services ul {
+    list-style: none;
+}
