@@ -4,167 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heavenly Glo | Luxury Lash & Brow Studio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gistesy&display=swap');
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #e6d7c3;
-            text-align: center;
-            scroll-behavior: smooth;
-            color: #5a4632;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #cfb8a2;
-            padding: 20px 40px;
-            font-size: 24px;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-bottom: 2px solid #a3876f;
-        }
-        .logo {
-            font-family: 'Gistesy', cursive;
-            font-size: 32px;
-        }
-        .menu {
-            display: none;
-            flex-direction: column;
-            background-color: #cfb8a2;
-            position: absolute;
-            right: 20px;
-            top: 60px;
-            width: 200px;
-            border-radius: 5px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .menu a {
-            padding: 12px;
-            text-decoration: none;
-            color: #5a4632;
-            font-size: 18px;
-            text-align: right;
-            display: block;
-            transition: background 0.3s;
-        }
-        .menu a:hover {
-            background: #a3876f;
-        }
-        .menu-toggle {
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-            padding: 10px;
-        }
-        .menu-toggle div {
-            width: 30px;
-            height: 4px;
-            background-color: #5a4632;
-            margin: 4px;
-            border-radius: 2px;
-        }
-        .hero {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: url('https://github.com/arcegag/heavenly-glo/blob/main/eye%20lash.jpg?raw=true') no-repeat center center/cover;
-            padding: 80px 20px;
-            text-align: center;
-            min-height: 350px;
-        }
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            color: white;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            margin-top: 10px;
-            background-color: #8a6a4f;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #6f533e;
-            transform: scale(1.05);
-        }
-        .content-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1000px;
-            margin: 50px auto;
-            text-align: left;
-            padding: 20px;
-        }
-        .content-text {
-            max-width: 450px;
-        }
-        .content-image img {
-            width: 100%;
-            max-width: 450px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            padding: 20px;
-            background-color: #cfb8a2;
-            text-align: center;
-        }
-    </style>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu');
-            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gistesy&display=swap">
 </head>
 <body>
+
     <header>
         <div class="logo">Heavenly Glo</div>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <nav class="menu">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#hours">Hours</a>
-            <a href="#booking">Book Now</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('services')">Services</a>
+            <a onclick="showSection('hours')">Hours</a>
+            <a onclick="showSection('booking')">Book Now</a>
+            <a onclick="showSection('about')">About</a>
+            <a onclick="showSection('contact')">Contact</a>
         </nav>
     </header>
+
     <div class="hero" id="home">
         <div class="hero-content">
             <h1>Welcome to Heavenly Glo</h1>
             <p>Enhancing your natural beauty with expert precision and care.</p>
         </div>
     </div>
+
     <section id="services" class="content-section">
         <div class="content-text">
             <h2>Our Services</h2>
-            <ul>
+            <ul class="content-list">
                 <li>Classic Lash Extensions</li>
                 <li>Volume Lash Extensions</li>
                 <li>Hybrid Lashes</li>
@@ -174,9 +43,10 @@
             </ul>
         </div>
         <div class="content-image">
-            <img src="https://img.freepik.com/free-photo/beauty-portrait-young-woman-with-perfect-makeup_144627-33296.jpg" alt="Lash Services">
+            <img src="https://github.com/arcegag/heavenly-glo/blob/main/eye%20lash.jpg?raw=true" alt="Lash Services">
         </div>
     </section>
+
     <section id="hours" class="content-section">
         <div class="content-text">
             <h2>Operating Hours</h2>
@@ -184,8 +54,10 @@
             <p>Saturday - Sunday: Closed</p>
         </div>
     </section>
+
     <footer>
         &copy; 2025 Heavenly Glo. All Rights Reserved.
     </footer>
+
 </body>
 </html>
