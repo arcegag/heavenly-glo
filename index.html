@@ -9,15 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Gistesy&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <header>
         <div class="logo">Heavenly Glo</div>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </header>
-
-    <!-- Side Navigation Menu -->
-    <nav id="mobile-menu">
+    
+    <nav id="mobile-menu" class="mobile-menu">
         <ul>
             <li><a href="#about" onclick="closeMenu()">About</a></li>
             <li><a href="#services" onclick="closeMenu()">Services</a></li>
@@ -26,12 +23,14 @@
             <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
         </ul>
     </nav>
-
-    <!-- Hero Section -->
+    
     <section class="hero">
-        <h1>Welcome to Heavenly Glo</h1>
-        <p>Enhancing your natural beauty with expert precision and care.</p>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Heavenly Glo</h1>
+            <p>Enhancing your natural beauty with expert precision and care.</p>
+            <a href="#book" class="btn">Book Now</a>
+        </div>
     </section>
-
 </body>
 </html>
