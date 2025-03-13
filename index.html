@@ -3,61 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heavenly Glo | Luxury Lash & Brow Studio</title>
+    <title>Heavenly Glo</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gistesy&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Gistesy&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
-        <div class="logo">Heavenly Glo</div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <nav id="menu">
-            <a onclick="showSection('home')">Home</a>
-            <a onclick="showSection('services')">Services</a>
-            <a onclick="showSection('hours')">Hours</a>
-            <a onclick="showSection('booking')">Book Now</a>
-            <a onclick="showSection('about')">About</a>
-            <a onclick="showSection('contact')">Contact</a>
-        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <h1 class="logo">Heavenly Glo</h1>
     </header>
 
-    <div class="hero" id="home">
-        <div class="hero-content">
-            <h1>Welcome to Heavenly Glo</h1>
-            <p>Enhancing your natural beauty with expert precision and care.</p>
-        </div>
-    </div>
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#book">Book</a></li>
+        </ul>
+    </nav>
 
-    <section id="services" class="content-section">
-        <div class="content-text">
-            <h2>Our Services</h2>
-            <ul class="content-list">
-                <li>Classic Lash Extensions</li>
-                <li>Volume Lash Extensions</li>
-                <li>Hybrid Lashes</li>
-                <li>Brow Shaping & Tinting</li>
-                <li>Microblading & Powder Brows</li>
-                <li>Lash Lift & Tint</li>
-            </ul>
-        </div>
-        <div class="content-image">
-            <img src="https://github.com/arcegag/heavenly-glo/blob/main/eye%20lash.jpg?raw=true" alt="Lash Services">
-        </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <button class="book-now">BOOK NOW</button>
     </section>
 
-    <section id="hours" class="content-section">
-        <div class="content-text">
-            <h2>Operating Hours</h2>
-            <p>Monday - Friday: 9 AM - 5 PM</p>
-            <p>Saturday - Sunday: Closed</p>
-        </div>
+    <!-- Sections for Navigation -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Heavenly Glo, we specialize in luxury lash and brow services, enhancing natural beauty with precision.</p>
     </section>
 
-    <footer>
-        &copy; 2025 Heavenly Glo. All Rights Reserved.
-    </footer>
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Classic Lash Extensions</li>
+            <li>Volume Lash Extensions</li>
+            <li>Hybrid Lashes</li>
+            <li>Brow Shaping & Tinting</li>
+            <li>Microblading & Powder Brows</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@heavenlyglo.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <section id="book">
+        <h2>Book an Appointment</h2>
+        <p>Schedule your appointment with us online.</p>
+    </section>
 
 </body>
 </html>
