@@ -1,8 +1,7 @@
 function toggleMenu() {
-    let menu = document.getElementById("mobile-menu");
-    menu.classList.toggle("active");
+    document.getElementById("mobile-menu").classList.toggle("active");
 }
+
 function closeMenu() {
-    let menu = document.getElementById("mobile-menu");
-    menu.classList.remove("active");
+    document.getElementById("mobile-menu").classList.remove("active");
 }
