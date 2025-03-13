@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heavenly Glo | Luxury Lash & Brow Studio</title>
+    
+    <!-- Gistesy Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gistesy&display=swap">
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -15,6 +18,7 @@
             scroll-behavior: smooth;
             color: #5a4632;
         }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -26,26 +30,31 @@
             text-transform: uppercase;
             border-bottom: 2px solid #a3876f;
         }
+
         .logo {
             font-family: 'Gistesy', cursive;
-            font-size: 32px;
+            font-size: 40px;
             font-weight: bold;
         }
+
         .menu-toggle {
             display: none;
             flex-direction: column;
             cursor: pointer;
         }
+
         .menu-toggle div {
             width: 30px;
             height: 3px;
             background: #5a4632;
             margin: 5px;
         }
+
         nav {
             display: flex;
             gap: 20px;
         }
+
         nav a {
             text-decoration: none;
             color: #5a4632;
@@ -54,9 +63,11 @@
             transition: color 0.3s;
             cursor: pointer;
         }
+
         nav a:hover {
             color: #8a6a4f;
         }
+
         .hero {
             position: relative;
             display: flex;
@@ -65,8 +76,9 @@
             background: url('YOUR_UPLOADED_IMAGE_URL_HERE') no-repeat center center/cover;
             padding: 80px 20px;
             text-align: center;
-            min-height: 350px; /* Smaller image height */
+            min-height: 450px; /* Correct size */
         }
+
         .hero::before {
             content: "";
             position: absolute;
@@ -76,11 +88,13 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
         }
+
         .hero-content {
             position: relative;
             z-index: 2;
             color: white;
         }
+
         .btn {
             display: inline-block;
             padding: 12px 24px;
@@ -93,10 +107,12 @@
             font-weight: bold;
             transition: all 0.3s ease;
         }
+
         .btn:hover {
             background-color: #6f533e;
             transform: scale(1.05);
         }
+
         .dropdown-menu {
             display: none;
             flex-direction: column;
@@ -108,6 +124,7 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             padding: 10px;
         }
+
         .dropdown-menu a {
             padding: 10px;
             text-decoration: none;
@@ -115,10 +132,12 @@
             font-size: 18px;
             display: block;
         }
+
         .dropdown-menu a:hover {
             background: #8a6a4f;
             color: white;
         }
+
         @media screen and (max-width: 768px) {
             nav {
                 display: none;
@@ -131,6 +150,7 @@
             }
         }
     </style>
+
     <script>
         function toggleMenu() {
             const menu = document.getElementById("menu");
@@ -138,6 +158,7 @@
         }
     </script>
 </head>
+
 <body>
     <header>
         <div class="logo">Heavenly Glo</div>
@@ -155,12 +176,14 @@
             <a onclick="showSection('contact')">Contact</a>
         </nav>
     </header>
+
     <div class="hero" id="home">
         <div class="hero-content">
             <h1>Welcome to Heavenly Glo</h1>
             <p>Enhancing your natural beauty with expert precision and care.</p>
         </div>
     </div>
+
     <footer>
         &copy; 2025 Heavenly Glo. All Rights Reserved.
     </footer>
